@@ -96,7 +96,7 @@ function myFunction() {
     }
 
     function gamePoint(){
-        count=(snake.length-2);
+        count=(snake.length-3);
         var score=document.getElementById("score");
         score.innerHTML = count;
         if(parseInt(refreshTime)-(2*count)>500)
