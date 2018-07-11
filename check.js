@@ -305,6 +305,7 @@ function myFunction() {
 function myCloseFunction(){
     location.reload();
 }
+
 function gameEnd(){
     var x = document.getElementById("boardScore");
     x.style.display="none";

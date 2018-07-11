@@ -5,9 +5,7 @@
     float: left;
 }
 .score-board{
-    float: left;
-    width: 20%;
-    height: 92%;  
+    float: left; 
 }
 
 
@@ -18,7 +16,7 @@
 	background-color:#44c767;
 	-moz-border-radius:42px;
 	-webkit-border-radius:42px;
-	border-radius:42px;
+	border-radius:4px;
 	border:1px solid #18ab29;
 	display:inline-block;
 	cursor:pointer;
@@ -44,22 +42,19 @@ span{
 }
 .footer {
     position: fixed;
-    left: 0;
     bottom: 0;
     width: 100%;
-    height: 28%; 
-    color: white;
+    height: 20%;
+    padding-left: 15%;
  }
 
 .score-card{
-    margin-left: 100%;
-    margin-right: 50%;
-    margin-top: 50%;
-    width: 200px;
-    height: 150px;
+    margin-top: 124%;
+    width: 100px;
+    height: 100px;
     background-color: salmon;
-    border-radius: 10px; 
-    transition:  width 2s, height 2s;
+    border-radius: 60px;
+    transition: width 2s, height 2s;
 }
 #score{
     padding: 20%;
@@ -73,45 +68,55 @@ span{
     animation-timing-function: linear;
 }
 
-
-
-.score-card:hover{
-    width: 210px;
-    height: 160px;
-}
-
 @keyframes change{
     from{transform: rotateX(0deg)}
     to{transform: rotateX(360deg)}
 }
 
- #msg{
-   
+ #msg{   
     color: white;
     text-align: center;
     font-size: 20px;
-} 
+}
+
  #close{
-    margin-top: -50%;
-    margin-left: 35%; 
-    width: 300px;
-    height: 300px;
+    margin-left: 45%;
+    width: 200px;
+    height: 200px;
     border-radius: 10px;
-    background: darkmagenta;
     border: solid;
-    background-color: darkred;
     animation-name: drop;
     animation-duration: 5s; 
     animation-fill-mode: forwards;
-    background: darkseagreen;
+    background: darkmagenta;
     opacity: 1;
-} 
+    padding: 2%
+}
 @keyframes drop{
    0%{}
-   70%{transform: translateY(800px);
+   70%{transform: translateY(40%);
      opacity:  1; 
     }
-   100%{transform: translateY(750px);
+   100%{transform: translateY(10%);
     opacity:  1; 
     }
+}
+.body{
+    width: auto;
+    height: auto;
+}
+.gameplay{
+    padding-left: 25%;
+    padding-top: 2%;
+}
+.left{
+    width: 70%;
+    float: left;
+    height: 80%;
+}
+.right{
+    background: #ffffff;
+    width: 30%;
+    float: left;
+    height: 80%;
 }

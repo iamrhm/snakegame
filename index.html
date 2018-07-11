@@ -5,24 +5,33 @@
         <link rel="stylesheet" type="text/css" href="score.css">
     </head>   
     <body class="SnakeGame"  onload="myLoadFunction()"  >
-            
-        <div id="0"><div id="gameBoard" class="end"></div></div>
-        <div id="close"  style="border: solid;">
-            <h1 id="msg">BOOO!!</h1>
-            <h1 id="msg">Hit End!!</h1>
-               
-        </div>
-        <div class="score-board" id="boardScore">
-           <div class="score-card"> <h2 id="score"></h2></div>
-        </div>
-        
-        <div class="footer">
-            <div class="switch">
-                <span ><a><input type="button" value="Start" id="Start" onclick="myFunction()" class="myButton"></a></span>
-                <span ><a><input type="button" value="End" id="End" class="myButton" onclick="myCloseFunction()" ></a></span>
-                <span ><a href="#" class="myButton"><img src="share.png"></a></span>
-            </div>        
-        </div>
+    	<div class="main">
+				
+				<div class="left">
+					<div class="gameplay">
+						<div id="0" style="margin: auto"><div id="gameBoard" class="end" style="margin: auto"></div></div>
+						<div id="close"  style="border: solid;">
+							<div style="padding: 25%;">
+								<h1 id="msg">BOOOOOO!!</h1>
+								<h1 id="msg">Hit End!!</h1> 
+							</div>     
+						</div>
+					</div>
+				</div>
+
+				<div class="right">
+						<div class="score-board" id="boardScore">
+								<div class="score-card"> <h2 id="score"></h2></div>
+						 </div>
+				</div>
+			</div>
+
+			<div class="footer">
+					<div class="switch">
+							<span ><a><input type="button" value="Start" id="Start" onclick="myFunction()" class="myButton"></a></span>
+							<span ><a><input type="button" value="End" id="End" class="myButton" onclick="myCloseFunction()" ></a></span>
+					</div>        
+			</div>
         
     </body> 
 </html>
